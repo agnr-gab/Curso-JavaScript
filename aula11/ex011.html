@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descubra Sua Nacionalidade</h1>
+    Digite o país onde nasceu: <input type="text" name="txtnome" id="txtnome" placeholder="País de Origem">
+    <input type="button" value="Pesquisar" onclick="buscar()"> 
+    <div id="res">
+
+    </div>
+    <script>
+        function buscar() {
+            var pais = document.getElementById('txtnome')
+            var res = document.getElementById('res')
+            var nac = String(pais.value)
+            res.innerHTML = `<p>Você nasceu no/em <strong>${nac}.</strong></p>`
+            if (nac == 'Brasil' || nac == 'brasil') {
+                res.innerHTML += '<p>Você é <strong>Brasileira(o)!</strong><p>'
+            } else {
+                res.innerHTML += '<p>Você é <strong>Estrangeira(o)</strong>!</p>'
+            }
+            res.innerHTML += '<p>Obrigada(o)!</p>'
+            
+        } 
+    </script>
+</body>
+</html>
