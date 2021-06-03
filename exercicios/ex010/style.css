@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@700&display=swap');
+
+body { font: 12pt Arial; background-color: goldenrod; text-align: center;}
+h1, h2, h3 { font-family: 'Pacifico', cursive; font-weight: strong;}
+button { font-size: 12pt; padding: 30px; font-weight: bolder; }
